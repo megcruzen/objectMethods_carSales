@@ -1,5 +1,5 @@
 
-#Practice: Car Sales
+# Practice: Car Sales
 
 Randall has come back with a new job for you. Each week, he wants to see a report of how many cars each salesperson sells for that week. Here's his requirements to display for each sale.
 
