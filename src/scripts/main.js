@@ -12,14 +12,14 @@ container.innerHTML = "<h1>Weekly Sales Report</h1>"
 
 salesByWeek.forEach(sale => {
     container.innerHTML += "<hr />";
-
-    let agentName = `${sale.sales_agent.first_name} ${sale.sales_agent.last_name}`;
-    container.innerHTML += `<h3>${agentName}</h3>`;
+    container.innerHTML += `<h2>${sale.sales_agent.first_name} ${sale.sales_agent.last_name}</h2>`;
 
     /* For...Of with Object.entries() | Prints both key and value */
     // console.log(Object.entries(sale));
     for (const entry of Object.entries(sale.vehicle)) {
         container.innerHTML += `<div>${entry[0]}: ${entry[1]}</div>`
     }
+
+    container.innerHTML += `<h4>Profit: $${sale.gross_profit}</h4>`
 
 })
