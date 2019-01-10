@@ -1,4 +1,4 @@
-[
+const salesByWeek = [
     {
         "vehicle": {
             "year": 2013,
